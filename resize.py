@@ -12,7 +12,9 @@ def reducir(www):
     #print(dir2)
     with open(dir, 'r+b') as f:
         with Image.open(f) as image:
-            cover = resizeimage.resize_cover(image, [900, 1100])
+            width, heigh = image.size
+
+            cover = resizeimage.resize_cover(image, [width / 6, heigh / 6])
             cover.save(dir2, image.format)
 sizefile=0
 y=0
@@ -34,7 +36,7 @@ for base, dirs, files in os.walk(ruta_app):
 
         if ".png" in files[i]:
             aux=sum
-            reducir(base+"\\"+files[i])
+           # reducir(base+"\\"+files[i])
             sizefile = os.path.getsize(base+"\\"+files[i])
             #if sizefile > 700024:
               #  x=x+1
@@ -43,8 +45,7 @@ for base, dirs, files in os.walk(ruta_app):
 
             sum=aux+sizefile
             y=y+1
-
-
+reducir(r"D:\versiones de control\ARCA DE PAPEL\htdocs\view\exercises\comunicacion\1-1-7\img")
 print(ruta_app)
 print(y)
 print (x)

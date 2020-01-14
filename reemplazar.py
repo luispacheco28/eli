@@ -22,7 +22,7 @@ x=0
 sum=0
 i = 0
 aux=0
-ruta_app =  os.getcwd() #r"D:\versiones de control\ARCA DE PAPEL"
+ruta_app =  r"D:\versiones de control\ARCA DE PAPEL" # os.getcwd()
 total = 0
 num_archivos = 0
 formato = '%d-%m-%y %H:%M:%S'
@@ -37,7 +37,11 @@ for base, dirs, files in os.walk(ruta_app):
 
         if ".png" in files[i]:
             #aux=sum
-            reducir(base+"\\"+files[i])
+            try:
+                reducir(base+"\\"+files[i])
+                print(1)
+            except:
+                print("pass")
             #sizefile = os.path.getsize(base+"\\"+files[i])
             #if sizefile > 700024:
               #  x=x+1

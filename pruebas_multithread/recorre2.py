@@ -21,7 +21,7 @@ def recorre2(cola):
     d2 = ""
     i = 0
     aux = 0
-    ruta_app = r"C:\Users\SOPORTE\Desktop\ARca\ARCA DE PAPEL\htdocs\view\exercises"   #  os.getcwd()    C:\Users\SOPORTE\Desktop\VERSIONES DE CONTROL\ARCA DE PAPEL\htdocs"
+    ruta_app = r"C:\Users\SOPORTE\Desktop\ARca\ARCA DE PAPEL\htdocs\view\exercises"  # YOUR DIR HERE!!    os.getcwd()    C:\Users\SOPORTE\Desktop\VERSIONES DE CONTROL\ARCA DE PAPEL\htdocs"
     total = 0
 
     linea = '-' * 60
@@ -42,12 +42,12 @@ def recorre2(cola):
     return cola
 
 
-
-
-
 cola = queue.Queue()
-cola2=recorre2(cola)
-print("empezamos a comprimir")
+cola2 = recorre2(cola)
+
+print("compressing start...")
+
+# multithread: using 6 cores at same time.
 for i in range(cola2.qsize()):
     t = threading.Thread(target=downgrade, args=(cola2,))
     t2 = threading.Thread(target=downgrade, args=(cola2,))
@@ -67,16 +67,6 @@ for i in range(cola2.qsize()):
     t4.join()
     t5.join()
     t6.join()
+
+# u have to stop the program when the terminal shows "ALL DONE"
 medir()
-
-
-
-
-
-
-
-
-
-
-
-

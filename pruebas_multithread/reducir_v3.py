@@ -7,7 +7,7 @@ def downgrade(cola=queue.Queue()):
 
     dir = cola.get()
     if (cola.empty() == True):
-        print("SE ACABO")
+        print("ALL DONE")
 
     print(dir)
 

@@ -10,7 +10,7 @@ def recorre():
 
     i = 0
     aux = 0
-    ruta_app =  r"C:\Users\SOPORTE\Desktop\imagenes pesadas"   #  os.getcwd()    C:\Users\SOPORTE\Desktop\VERSIONES DE CONTROL\ARCA DE PAPEL\htdocs"
+    ruta_app = r"C:\Users\SOPORTE\Desktop\imagenes pesadas"  # YOUR DIR HERE!!   os.getcwd()    C:\Users\SOPORTE\Desktop\VERSIONES DE CONTROL\ARCA DE PAPEL\htdocs"
     total = 0
 
     linea = '-' * 60

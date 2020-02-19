@@ -38,7 +38,7 @@ for base, dirs, files in os.walk(ruta_app):
         if ".png" in files[i]:
             #aux=sum
             try:
-                reducir(base+"\\"+files[i])
+               # reducir(base+"\\"+files[i])
                 print(1)
             except:
                 print("pass")

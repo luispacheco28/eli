@@ -45,7 +45,7 @@ for base, dirs, files in os.walk(ruta_app):
 
             sum=aux+sizefile
             y=y+1
-reducir(r"D:\versiones de control\ARCA DE PAPEL\htdocs\view\exercises\comunicacion\1-1-7\img")
+#reducir(r"D:\versiones de control\ARCA DE PAPEL\htdocs\view\exercises\comunicacion\1-1-7\img")
 print(ruta_app)
 print(y)
 print (x)

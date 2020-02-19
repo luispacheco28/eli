@@ -12,3 +12,9 @@ To delete a folder with all its files and subfolders you just have to specify th
 There was an unusable folder in each path of many other folders, it helped me to delete 22k junk folders.
 
 sorry, This is a tool to delete junk files, I'm sorry to fill this repository with them. any suggestion is welcome.
+
+reductor de imágenes:
+En la carpeta "pruebas_multithread" están los dos archivos, uno encola direcciones y el otro reduce el tamaño de las imágenes. pega la ruta en la línea 24, este programa hace un recorrido en profunididad buscando archivos .png, si deseas puedes configurarlo para que sea de otro tipo de imágenes. 
+
+Borrador de carpetas: "borra a lo locoi" -> recorre.py
+puedes usar esta herramienta para borrar carpetas basura dentro de un directorio, si buscas carpetas con el nombre "img", borrará todas las carpetas y subcarpetas de un directorio con el nombre "img".
